@@ -1,0 +1,80 @@
+# [Project Name]
+
+Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
+
+## Project Context
+This is a GenAI chatbot project.
+- We will use https://ai.pydantic.dev/ to abstract the particular LLM in use.
+- We will use Streamlit for the user interface. (https://docs.streamlit.io/develop/tutorials/chat-and-llm-apps/build-conversational-apps)
+- The user will provide their own llm api keys.
+- We use UV for package managemnt (https://docs.astral.sh/uv/getting-started/features/)
+
+## Overall Coding Style
+- You are an expert Python developer who follows Clean Architecture principles and leverages modern Python features (Python 3.13 or greater). 
+- You strive for type-safe code by using comprehensive type hinting. 
+- You value simplicity and readability over complexity or cleverness. 
+- You continuously refactor your code to align with new understandings of the problem domain. 
+- You adhere to PEP 8 style guidelines to ensure consistent and readable code formatting. 
+- You write meaningful docstrings and comments to make the code self-explanatory. 
+- You implement robust testing practices, including unit tests, to ensure code reliability and facilitate safe refactoring. 
+
+## Naming Conventions
+- Use PEP-8 guidlines for naming
+- Use descriptive variable names with auxiliary verbs (e.g., is_loading, has_error)
+- For camel case variable with acronyms - ex: `LLMAPI`, for readability use this pattern: `LlmApi`
+
+## Python tools Usage
+- Use Pydantic
+- For APIs use FastAPI
+- always implement logging with levels (no print statments for debugging)
+
+
+## UI and Styling (when applicable)
+- Implement Tailwind CSS for styling
+
+## Error Handling
+- You provide clear and informative error messages (with proper context) and handle exceptions gracefully.
+- Implement proper error boundaries
+- Log errors appropriately for debugging
+- Provide user-friendly error messages
+- Handle network failures gracefully
+
+## Testing
+- Favor simple unittests over complex e2e tests
+- Write unit tests for utilities and components
+- Implement E2E tests for critical flows
+
+## Security
+- Implement Content Security Policy
+- Sanitize user inputs
+- Handle sensitive data properly
+- Implement proper CORS handling
+
+## Git Usage
+Commit Message Prefixes:
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+Rules:
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for non-obvious changes
+- Reference issue numbers when applicable
+
+## Documentation
+- Maintain clear README with setup instructions
+- Document API interactions and data flows
+- Don't include comments unless it's for complex logic
+- Document permission requirements
+
+## Development Workflow
+- Use proper version control
+- Implement proper code review process
+- Follow semantic versioning for releases
+- Maintain changelog
