@@ -1,6 +1,8 @@
 # ChatWithDoc 💬
 
 This was built as a trial of working Codeium Windsurf IDE to judge its potential.  Was able to build this in about an hour with very few hiccups.
+- Winsurf (using Sonnet 3.5) wrote all the code, including this readme
+- It never got "stuck" there we just some corrections I directed in the implementation
 
 A streamlined chat interface for interacting with documents using Claude, Anthropic's state-of-the-art language model.
 
