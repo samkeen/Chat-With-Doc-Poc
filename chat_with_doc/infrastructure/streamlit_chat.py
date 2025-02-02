@@ -85,8 +85,7 @@ class ChatInterface:
             st.sidebar.markdown("---")
             st.sidebar.subheader("Current Document")
             st.sidebar.text(st.session_state.document.name)
-            if st.sidebar.button("Preview Document"):
-                st.session_state.show_preview = True
+            st.session_state.show_preview = True
 
         st.sidebar.markdown("---")
         if st.sidebar.button("Clear Chat History"):
